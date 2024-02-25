@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Popins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(9, 9, 61);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 231);
+            font-size: 1.02rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 40%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 64%;
+            border-radius: 47%;
+            margin-left: 75px;
+        }
+
+        .purple {
+            color: rgb(139, 84, 190);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element {
+            color: rgb(139, 84, 190);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height:80vh ;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width:1px ;
+            background-color: white;
+            margin: 0 6vw;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            columns: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer>div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding:12px 0;
+        }
+        @media screen and (max-width: 1400px) {
+            .secondSection{
+                max-width: 80vw;
+                margin: auto;
+                height: 141vw;
+            }
+          
+          .box{
+            flex-direction: column;
+          }
+          .seconSection .vertical{
+            height: unset;
+          }
+          .vertical-title, .vertical-desc{
+            left: 45px;
+          }
+          .secondSection .box{
+            width: 59vw;
+          }
+          nav{
+            flex-direction: column;
+          }
+          
+          .firstSection{
+            flex-direction: column-reverse;
+          }
+          .leftSection{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .rightSection{
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+          }
+          .rightSection img{
+            width: 45vw; 
+            margin-bottom: 73px;
+          }
+          .image-top{
+            top: 122px;
+          }
+          .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          body{
+            min-width: fit-content;
+          }
+        }
+        .leftSection {
+    font-size: 2rem;
+    margin: 20px; /* Add margin */
+    padding: 20px; /* Add padding */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Suvam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact-me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hello there! 👋 I am<span class="purple"> SuvamDebnath </span></div><br>
+                <div>I am persuing my degree in B.tech in computer science and engineering specialisation in artificial intelligence and machine learning from University of Engineering and Management, Kolkata.</div><br>
+                <div>
+                    I constantly seek out new challenges and opportunities to expand my skills.
+                </div><br>
+                <div>
+                    I'm thrilled to be a part of this community and look forward to sharing insights, learning from others, and making meaningful connections along the way. Together, let's embark on a journey of discovery and growth!
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="suvam2.png" alt="">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

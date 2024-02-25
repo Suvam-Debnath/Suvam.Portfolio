@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Popins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(9, 9, 61);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 231);
+            font-size: 1.02rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 40%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 67%;
+            border-radius: 47%;
+            margin-left: 75px;
+        }
+
+        .purple {
+            color: rgb(139, 84, 190);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element {
+            color: rgb(139, 84, 190);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height:80vh ;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width:1px ;
+            background-color: white;
+            margin: 0 6vw;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            columns: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: #0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer>div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding:12px 0;
+        }
+        @media screen and (max-width: 1400px) {
+            .secondSection{
+                max-width: 80vw;
+                margin: auto;
+                height: 141vw;
+            }
+          
+          .box{
+            flex-direction: column;
+          }
+          .seconSection .vertical{
+            height: unset;
+          }
+          .vertical-title, .vertical-desc{
+            left: 45px;
+          }
+          .secondSection .box{
+            width: 59vw;
+          }
+          nav{
+            flex-direction: column;
+          }
+          
+          .firstSection{
+            flex-direction: column-reverse;
+          }
+          .leftSection{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .rightSection{
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+          }
+          .rightSection img{
+            width: 45vw; 
+            margin-bottom: 73px;
+          }
+          .image-top{
+            top: 122px;
+          }
+          .secondSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          body{
+            min-width: fit-content;
+          }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Suvam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact-me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <section id="projects">
+        <h1>Projects</h1>
+        <br><br>
+        <ul>
+            <li>
+                <article id="sales-prediction">
+                    <h3>Big mart sales prediction using machine laearning in python</h3><br>
+                    <ul>
+                        <li>The main idea of Big Mart sales prediction using machine learning is to develop a model
+                            that can accurately forecast future sales based on historical sales data and other
+                            relevant features. </li>
+                        <li>This involves analyzing past sales trends, as well as factors such as
+                            store location, size, promotions, and item attributes, to identify patterns and
+                            relationships that can be used to predict future sales volumes.</li>
+                    </ul><br><br>
+                </article>
+            </li>
+            <li>
+                <article id="virtual assistant">
+                    <h3>Online hotel and resort booking</h3><br>
+                    <ul>
+                        <li>Let’s Go is a hotel and resort booking website which provides the facilities for booking
+                            hotels and resorts for customers. They operate their business in all the cities of India
+                            as well as the world.
+                        </li>
+                        <li>Any customer who need to book hotel or resort had to visit their
+                            office which is situated in India for checking the availability as well as negotiation.
+                        </li>
+                        <li>Recently they have decided to change their booking pattern from manual to web based
+                            system. It will help them to manage the customers booking easily and also to keep the
+                            customers data more safe</li>
+                    </ul>
+                </article>
+            </li>
+        </ul>
+        
+    </section>
+</body>
+</html>
